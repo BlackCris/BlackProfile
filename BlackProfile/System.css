@@ -1,0 +1,285 @@
+
+
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 头部样式 */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 2px;
+  }
+  
+  .logo img {
+    height: 4rem;
+    width: auto;
+  }
+  
+  .logo2 {
+     height: 9rem;
+  }
+  /* Hero Section 样式 */
+  .hero-section {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: calc(1.425rem + 2.1vw);
+    margin-bottom: 1rem;
+    font-family: 'Roboto Slab', serif;
+  }
+  .rounded-lg-3{
+    width: 75px;
+    margin:2rem;
+  }
+  .hero-section p {
+    font-size: 18px;
+    color: #666;
+    font-family: 'Roboto Slab', serif;
+  }
+  .colimage{
+    height: 520px;
+    width: 320px;
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  /* Services Section 样式 */
+  .services-section {
+    background-color: #fff;
+    padding: 50px;
+  }
+  
+  .services-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .service {
+    margin-bottom: 30px;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .service p {
+    font-size: 18px;
+    color: #666;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  /* Footer 样式 */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    
+  }
+
+  .logo-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+  }
+  
+  .logo-nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  .logo-nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .logo-nav .logo {
+    margin-right: 20px;
+  }
+    
+    .logo-nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    }
+    
+    .logo-nav ul li a:hover::before {
+    width: 100%;
+    }
+  
+
+  
+    .codepen-button {
+      display: block;
+      cursor: pointer;
+      color: white;
+      margin: 0 auto;
+      position: relative;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      overflow: hidden;
+      padding: 3px;
+      isolation: isolate;
+    }
+
+.codepen-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+  background-size: 25% 100%;
+  animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
+  animation-play-state: paused;
+  translate: -5% 0%;
+  transition: translate 0.25s ease-out;
+}
+
+.codepen-button:hover::before {
+  animation-play-state: running;
+  transition-duration: 0.75s;
+  translate: 0% 0%;
+}
+
+@keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+.codepen-button span {
+  position: relative;
+  display: block;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  background: #000;
+  border-radius: 3px;
+  height: 100%;
+  
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 3px;
+  width: 30%;
+  margin: 0 auto;
+}
+.codepen-button:hover span {
+  background-position: 100% 100%;
+}
+
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  float: left;
+  margin-right: 1px;
+}
+
+.TextLogo {
+  float: left;
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: 'Roboto Slab', serif;
+}
+
+
+@media (max-width: 576px) {
+  /* Update styles for small window version */
+  .hero-section {
+    padding: 30px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-container a {
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  /* Update styles for medium window version */
+  .hero-section {
+    padding: 40px;
+  }
+
+  .button-container a {
+    margin-right: 20px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Large window version */
+@media (min-width: 993px) {
+  /* Update styles for large window version */
+  .hero-section {
+    padding: 50px;
+  }
+
+  .button-container a {
+    margin-right: 30px;
+  }
+}
